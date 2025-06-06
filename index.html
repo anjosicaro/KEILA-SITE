@@ -4,51 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Keila Arcanjo - Advogada</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+<link rel="stylesheet" href="/style.css">
+    <style>
+        /* Navegação suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Ajuste para compensar o header fixo (opcional) */
+        section {
+            scroll-margin-top: 80px; /* Ajuste conforme a altura do seu header */
+        }
+        
+        /* Estilo básico para demonstração */
+        .nav-btn.active {
+            color: #8C1111;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header com navegação -->
     <header class="header">
-        <div class="logo">logo</div>
+        <div class="logo">
+            <img src="/assets/logo.svg" alt="">
+        </div>
         <nav class="nav">
-            <button class="nav-btn active">Sobre</button>
-            <button class="nav-btn">Area de atuação</button>
-            <button class="nav-btn">Orçamentos</button>
-            <button class="nav-btn">Contatos</button>
+        
+            <a href="#about" class="nav-btn">Sobre</a>
+            <a href="#services" class="nav-btn">Área de atuação</a>
+            <a href="#testimonials" class="nav-btn">Depoimentos</a>
+            <a href="#contact" class="nav-btn">Contatos</a>
         </nav>
         <button class="cta-btn">Faça seu orçamento</button>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-content">
-            <h1>Keila Arcanjo</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <img src="/assets/logo2.svg" alt="">
+            <p>Comprometida com a promoção da justiça e a busca por resultados concretos, ofereço um atendimento pautado pela ética, objetividade e respeito à individualidade de cada cliente. Valorizo o seu tempo, a sua confiança e a sua trajetória. </p>
             <button class="hero-btn">Faça seu agendamento</button>
         </div>
-        <div class="hero-image"></div>
+        <div class="hero-image">
+            <img src="/assets/keila.webp" alt="Dra. Keila Arcanjo">
+        </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="about-image-container">
             <div class="circle-accent"></div>
-            <div class="about-image"></div>
+            <div class="about-image">
+                <img src="/assets/keila2.webp" alt="">
+            </div>
         </div>
         <div class="about-content">
             <h2>Saiba mais sobre a Dra. Keila</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-        </div>
+            <p>Iniciei minha trajetória na advocacia com a certeza de que cada cliente merece ser ouvido com atenção e representado com responsabilidade.
+Atuo com seriedade, ética e comprometimento, sempre buscando soluções jurídicas eficazes e acessíveis.
+Este espaço foi criado para facilitar o contato, apresentar meu trabalho e mostrar que você pode contar com uma advogada preparada e disposta a te acompanhar em cada passo do seu processo.
+</p>
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section id="services" class="services">
         <div class="services-left">
             <h2>Área de atuação</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+<p>Embora minha atuação principal seja no Direito Criminal, também ofereço assistência jurídica em outras áreas do Direito, como Cível, Trabalhista e de Família. Caso tenha dúvidas ou precise de orientação, entre em contato. Estou à disposição para esclarecer sua situação e enviar um orçamento personalizado.</p>
             <button class="services-btn">Fale conosco</button>
         </div>
         <div class="services-right">
@@ -58,7 +81,6 @@
             </div>
             <div class="service-item">
                 <p>O Direito Civil é o ramo do jurídico que regula as relações entre indivíduos, garantindo direitos e deveres em questões como contratos, propriedade, família, sucessões e responsabilidade civil. </p>
-               
             </div>
             <div class="service-item">
                 <div class="service-icon"> <img src="/assets/direitoTrabalhista.svg" alt=""></div>
@@ -80,7 +102,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="testimonials-grid">
             <div class="testimonial">
                 <div class="testimonial-header">
@@ -89,7 +111,7 @@
                     </div>
                     <div class="testimonial-name">Jose Maria Costa</div>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+<p>A Dra. Keila foi extremamente atenciosa do início ao fim. Explicou tudo com clareza e sempre esteve disponível para tirar dúvidas. Senti que meu caso estava em boas mãos o tempo todo.</p>
                 <div class="stars">★★★★★</div>
             </div>
             <div class="testimonial">
@@ -99,7 +121,7 @@
                     </div>
                     <div class="testimonial-name">Maria Aparecida</div>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+<p>Adorei o atendimento da Doura Keila! Além de ser muito profissional, ela tem um jeito acolhedor de atender. Me senti respeitada e ouvida em cada etapa. Recomendo de olhos fechados!</p>
                 <div class="stars">★★★★★</div>
             </div>
             <div class="testimonial">
@@ -109,10 +131,9 @@
                     </div>
                     <div class="testimonial-name">Antonio João Silveira</div>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+<p>Excelente atendimento! A Dra. Keila demonstrou total domínio do assunto e resolveu minha situação com rapidez e eficiência. Com certeza voltarei a procurá-la se precisar novamente.</p>
                 <div class="stars">★★★★★</div>
             </div>
-            
         </div>
         <div class="carousel-dots">
             <div class="dot active"></div>
@@ -123,17 +144,17 @@
 
     <!-- Comment Form -->
     <section class="comment-form">
-     <div class="comment-container">
-<h3>Envie seu comentário sobre o atendimento</h3>
-        <form class="comment-form-inline">
-            <input type="text" class="comment-input" placeholder="Digite seu comentário...">
-            <button type="submit" class="comment-btn">Enviar</button>
-        </form>
-     </div>   
+        <div class="comment-container">
+            <h3>Envie seu comentário sobre o atendimento</h3>
+            <form class="comment-form-inline">
+                <input type="text" class="comment-input" placeholder="Digite seu comentário...">
+                <button type="submit" class="comment-btn">Enviar</button>
+            </form>
+        </div>   
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer-content">
             <div class="footer-left">
                 <div>
@@ -143,23 +164,23 @@
                         <a href="#" class="social-icon whatsapp">📱</a>
                     </div>
                     <div class="footer-nav">
-                        <a href="#">Sobre</a>
-                        <a href="#">Área de atuação</a>
-                        <a href="#">Orçamentos</a>
-                        <a href="#">Contatos</a>
+                        <a href="#hero">Início</a>
+                        <a href="#about">Sobre</a>
+                        <a href="#services">Área de atuação</a>
+                        <a href="#testimonials">Depoimentos</a>
+                        <a href="#contact">Contatos</a>
                     </div>
                 </div>
             </div>
             <div class="footer-right">
                 <h3>Localização</h3>
-            <iframe 
-                class="mapa-frame"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.123456789!2d-46.83333333333334!3d-23.52444444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzI4LjAiUyA0NsKwNTAnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-             </div>
+                <iframe 
+                    class="mapa-frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.123456789!2d-46.83333333333334!3d-23.52444444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzI4LjAiUyA0NsKwNTAnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
         <div class="footer-bottom">
@@ -168,13 +189,32 @@
     </footer>
 
     <script>
-        // Navigation functionality
-        document.querySelectorAll('.nav-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelector('.nav-btn.active').classList.remove('active');
-                btn.classList.add('active');
+        // Navegação ativa baseada na seção visível
+        const sections = document.querySelectorAll('section');
+        const navBtns = document.querySelectorAll('.nav-btn');
+
+        // Função para atualizar o botão ativo
+        function updateActiveNav() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
             });
-        });
+
+            navBtns.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('href') === `#${current}`) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Atualiza a navegação ao rolar a página
+        window.addEventListener('scroll', updateActiveNav);
 
         // Carousel dots functionality
         document.querySelectorAll('.dot').forEach((dot, index) => {
